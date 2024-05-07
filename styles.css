@@ -1,0 +1,226 @@
+body{
+    margin: 0;
+    background: #0f2f41;
+    font-family: 'Titillium', sans-serif;
+    font-size: 16px;
+
+}
+
+h1, h3{
+    color: whitesmoke;
+    margin: 0;
+}
+
+p{
+    color: whitesmoke;
+    text-align: justify;
+    margin: 0;
+}
+
+/* CSS styles for the navigation bar */
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Background color of the navigation bar */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Padding around the navigation items */
+}
+  
+/* CSS styles for the navigation list */
+ul {
+    list-style-type: none; /* Remove bullet points from the list */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+  
+/* CSS styles for the navigation list items */
+ul li {
+    display: inline-block; /* Display list items horizontally */
+    margin-right: 20px; /* Add spacing between list items */
+}
+  
+/* CSS styles for the navigation list items on hover */
+ul li:hover {
+    color: #ffd700; /* Change text color on hover */
+}
+
+/* CSS styles for the name link */
+#myName {
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the text bold */
+    font-size: 20px; /* Adjust font size */
+    margin-right: auto; /* Push it to the left as far as possible */
+}
+
+.firstSection{
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url(./public/a.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#title{
+    font-weight: lighter;
+    font-size: 15px;
+    color: #00ac22;
+}
+
+.headWrite{
+    font-weight: bold;
+    font-size: 5em;
+}
+
+.vertical{
+    display: flex;
+    align-items: center;
+}
+
+.vertical-rule {
+    width: 1px; /* width of the vertical rule */
+    background-color: #00ac22; /* color of the vertical rule */
+    height: 50px; /* height of the vertical rule */
+    margin: 20px; /* margin around the vertical rule */
+}
+
+.img{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.secondSection{
+    padding: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.description{
+    height: 50%;
+    width: 50%;
+}
+
+.arrow {
+    border: solid #00ac22;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.thirdSect{
+    padding: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+a:hover{
+    color: #ffd700;
+}
+
+.fourthSect{
+    padding: 5%;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.card{
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.cardIn{
+    padding: 20px;
+}
+
+.cardImg{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+h3{
+    margin-bottom: 15px;
+}
+
+p{
+    margin-bottom: 20px;
+}
+
+footer{
+    padding: 5%;
+}
+
+.copyright{
+    text-align: center;
+    color: white;
+}
+
+
+/* OPTIMAZATION FOR SMARTPHONES */
+@media (max-width: 600px){
+    .firstSection{
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-image: url(./public/a.jpg);
+        background-size: cover;
+        background-position: center;
+        align-items: center;
+    }
+
+    .firstIn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headWrite{
+        font-size: 2.5em;
+    }
+
+    .img{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+    }
+
+    .secondSection{
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .description{
+        height: 50%;
+        width: 100%;
+    }
+
+    .fourthSect{
+        flex-direction: column;
+    }
+
+    .thirdSect{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+}
